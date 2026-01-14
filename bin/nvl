@@ -5,6 +5,7 @@
 var cli = require('../index.js');
 var pkg = require('../package.json');
 var updateNotifier = require('update-notifier');
+updateNotifier = updateNotifier.default || updateNotifier
 
 // Initialize the CLI
 cli.initialize(function (err) {
